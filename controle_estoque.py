@@ -1,7 +1,6 @@
 # CONTROLE DE ESTOQUE
 
 def atualizar_estoque(estoque, vendas):
-    # O estoque diminui conforme ocorrem vendas
     estoque_atual = estoque - vendas
     return estoque_atual
 
@@ -17,12 +16,7 @@ produto = input("Digite o nome do produto: ")
 estoque_inicial = int(input("Digite o estoque inicial: "))
 vendas = int(input("Digite a quantidade de vendas: "))
 estoque_minimo = int(input("Digite o estoque mínimo: "))
-
-print("\n--- RESUMO DO ESTOQUE ---")
-print(f"Produto: {produto}")
+print(f"\nProduto: {produto}")
 print(f"Estoque inicial: {estoque_inicial}")
 estoque_final = atualizar_estoque(estoque_inicial, vendas)
 print(f"Estoque final: {estoque_final}")
-verificar_reposicao(estoque_final, estoque_minimo)
-
-
