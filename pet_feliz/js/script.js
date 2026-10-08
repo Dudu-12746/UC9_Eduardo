@@ -118,7 +118,7 @@ $('#bookingForm').addEventListener('submit', e => {
    const msg = `Olá, PetFeliz! Meu nome é ${n}. Gostaria de solicitar ${s} para meu pet ${p}. Meu telefone: ${phone}.`;
 
    window.open(
-      'https://wa.me/5500000000000?text=' +
+      'https://wa.me/5527988561122?text=' +
       encodeURIComponent(msg),
       '_blank'
    );
